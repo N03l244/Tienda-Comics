@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cómics y Figuras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar Administrador -->
+    <nav id="navbar-admin" class="navbar navbar-expand-lg navbar-dark bg-dark d-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tienda Cómics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAdmin">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAdmin">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stock Tienda</a></li>
+                            <li><a class="dropdown-item" href="#">Registrar Producto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Proveedores</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Lista de Proveedores</a></li>
+                            <li><a class="dropdown-item" href="#">Dar de Alta Proveedor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pedidos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pedidos a Proveedor</a></li>
+                            <li><a class="dropdown-item" href="#">Pedidos a Cliente</a></li>
+                            <li><a class="dropdown-item" href="#">Pedidos Realizados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clientes Top</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar Empleado -->
+    <nav id="navbar-empleado" class="navbar navbar-expand-lg navbar-dark bg-secondary d-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tienda Cómics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavEmpleado">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavEmpleado">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stock de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pedidos de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lista de Proveedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clientes Top</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Contenido Principal -->
+    <div class="container mt-4">
+        <h1 class="text-center">Bienvenido a la Tienda de Cómics y Figuras</h1>
+        <p class="text-center">Descubre las últimas novedades y figuras exclusivas.</p>
+        <p>Informacion general meteremos imagenes algo como una revista</p>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Tienda de Cómics. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // Simulación de cambio de navbar según el tipo de usuario
+        let userType = "admin"; // Cambia a "empleado" para la otra navbar
+        
+        if (userType === "admin") {
+            document.getElementById("navbar-admin").classList.remove("d-none");
+        } else {
+            document.getElementById("navbar-empleado").classList.remove("d-none");
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
